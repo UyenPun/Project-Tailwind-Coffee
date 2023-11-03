@@ -575,6 +575,11 @@ video {
   margin-right: auto;
 }
 
+.my-6{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .my-8{
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -616,6 +621,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-24{
+  margin-top: 6rem;
+}
+
 .flex{
   display: flex;
 }
@@ -634,6 +643,10 @@ video {
 
 .h-\[280px\]{
   height: 280px;
+}
+
+.h-\[300px\]{
+  height: 300px;
 }
 
 .h-\[380px\]{
@@ -785,6 +798,18 @@ video {
   background-image: url('./img/featured-mug-02.jpg');
 }
 
+.bg-\[url\(\'\.\/img\/lifestyle-story-01\.jpeg\'\)\]{
+  background-image: url('./img/lifestyle-story-01.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle-story-02\.jpeg\'\)\]{
+  background-image: url('./img/lifestyle-story-02.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/lifestyle-story-03\.jpeg\'\)\]{
+  background-image: url('./img/lifestyle-story-03.jpeg');
+}
+
 .bg-\[url\(\'\.\/img\/magazine-image-01\.jpeg\'\)\]{
   background-image: url('./img/magazine-image-01.jpeg');
 }
@@ -896,6 +921,10 @@ video {
   padding-left: 2rem;
 }
 
+.text-left{
+  text-align: left;
+}
+
 .text-center{
   text-align: center;
 }
@@ -912,6 +941,10 @@ video {
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-\[13px\]{
+  font-size: 13px;
 }
 
 .text-\[28px\]{
@@ -1140,6 +1173,7 @@ video {
 
 .tud-parallax {
   height: 40vh;
+  margin-bottom: 10px;
 }
 
 .tud-no-parallax {
@@ -1253,20 +1287,6 @@ video {
 
 .group:hover .group-hover\:block{
   display: block;
-}
-
-@keyframes fadeIn{
-  from{
-    opacity: 0;
-  }
-
-  to{
-    opacity: 1;
-  }
-}
-
-.group:hover .group-hover\:animate-fadeIn{
-  animation: fadeIn .5s ease-in-out;
 }
 
 @media (min-width: 640px){
