@@ -580,8 +580,20 @@ video {
   margin-bottom: 2rem;
 }
 
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .mb-3{
   margin-bottom: 0.75rem;
+}
+
+.mb-4{
+  margin-bottom: 1rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .mb-6{
@@ -604,18 +616,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-24{
-  margin-bottom: 6rem;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-
 .flex{
   display: flex;
 }
@@ -626,6 +626,14 @@ video {
 
 .hidden{
   display: none;
+}
+
+.h-\[130px\]{
+  height: 130px;
+}
+
+.h-\[280px\]{
+  height: 280px;
 }
 
 .h-\[380px\]{
@@ -642,14 +650,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-\[130px\]{
-  height: 130px;
-}
-
-.h-\[280px\]{
-  height: 280px;
 }
 
 .w-11\/12{
@@ -681,18 +681,6 @@ video {
   flex-grow: 1;
 }
 
-.basis-1\/6{
-  flex-basis: 16.666667%;
-}
-
-.basis-2\/6{
-  flex-basis: 33.333333%;
-}
-
-.basis-3\/6{
-  flex-basis: 50%;
-}
-
 .basis-1\/2{
   flex-basis: 50%;
 }
@@ -701,8 +689,20 @@ video {
   flex-basis: 33.333333%;
 }
 
+.basis-1\/6{
+  flex-basis: 16.666667%;
+}
+
 .basis-2\/3{
   flex-basis: 66.666667%;
+}
+
+.basis-2\/6{
+  flex-basis: 33.333333%;
+}
+
+.basis-3\/6{
+  flex-basis: 50%;
 }
 
 .-translate-x-1\/2{
@@ -742,16 +742,16 @@ video {
   justify-content: space-between;
 }
 
-.gap-8{
-  gap: 2rem;
-}
-
 .gap-3{
   gap: 0.75rem;
 }
 
 .gap-5{
   gap: 1.25rem;
+}
+
+.gap-8{
+  gap: 2rem;
 }
 
 .bg-gray-900{
@@ -773,12 +773,28 @@ video {
   --tw-bg-opacity: 0.4;
 }
 
+.bg-\[url\(\'\.\/img\/bg-parallax-01\.jpeg\'\)\]{
+  background-image: url('./img/bg-parallax-01.jpeg');
+}
+
 .bg-\[url\(\'\.\/img\/featured-mug-01\.jpg\'\)\]{
   background-image: url('./img/featured-mug-01.jpg');
 }
 
 .bg-\[url\(\'\.\/img\/featured-mug-02\.jpg\'\)\]{
   background-image: url('./img/featured-mug-02.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/magazine-image-01\.jpeg\'\)\]{
+  background-image: url('./img/magazine-image-01.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/magazine-image-02\.jpeg\'\)\]{
+  background-image: url('./img/magazine-image-02.jpeg');
+}
+
+.bg-\[url\(\'\.\/img\/magazine-image-03\.jpeg\'\)\]{
+  background-image: url('./img/magazine-image-03.jpeg');
 }
 
 .bg-\[url\(\'\.\/img\/product-coffee-01\.jpeg\'\)\]{
@@ -819,18 +835,6 @@ video {
 
 .bg-\[url\(\'\.\/img\/slider-bg\.jpeg\'\)\]{
   background-image: url('./img/slider-bg.jpeg');
-}
-
-.bg-\[url\(\'\.\/img\/magazine-image-01\.jpeg\'\)\]{
-  background-image: url('./img/magazine-image-01.jpeg');
-}
-
-.bg-\[url\(\'\.\/img\/magazine-image-02\.jpeg\'\)\]{
-  background-image: url('./img/magazine-image-02.jpeg');
-}
-
-.bg-\[url\(\'\.\/img\/magazine-image-03\.jpeg\'\)\]{
-  background-image: url('./img/magazine-image-03.jpeg');
 }
 
 .bg-cover{
@@ -900,6 +904,11 @@ video {
   font-family: Karla, sans-serif;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
@@ -927,11 +936,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
 }
 
 .text-xs{
@@ -1123,6 +1127,47 @@ video {
 
 .tud-button:hover{
   --tw-bg-opacity: 0.95;
+}
+
+.tud-parallax,
+.tud-no-parallax {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+}
+
+.tud-parallax {
+  height: 40vh;
+}
+
+.tud-no-parallax {
+  height: auto;
+  z-index: 999;
+  background: white;
+}
+
+.tud-parallax-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* ... */
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (min-width: 1280px) {
+  .tqd-parallax {
+    height: 70vh;
+    transform-style: preserve-3d;
+  }
+
+  .tqd-parallax-image {
+    transform: translateZ(-1px) scale(1.5);
+  }
 }
 
 .after\:h-0::after{
